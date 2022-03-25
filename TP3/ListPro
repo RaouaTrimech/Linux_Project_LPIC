@@ -1,0 +1,310 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 14:30 ?        00:00:01 /sbin/init splash
+root           2       0  0 14:30 ?        00:00:00 [kthreadd]
+root           3       2  0 14:30 ?        00:00:00 [rcu_gp]
+root           4       2  0 14:30 ?        00:00:00 [rcu_par_gp]
+root           6       2  0 14:30 ?        00:00:00 [kworker/0:0H-kblockd]
+root           9       2  0 14:30 ?        00:00:00 [mm_percpu_wq]
+root          10       2  0 14:30 ?        00:00:00 [ksoftirqd/0]
+root          11       2  0 14:30 ?        00:00:04 [rcu_sched]
+root          12       2  0 14:30 ?        00:00:00 [migration/0]
+root          13       2  0 14:30 ?        00:00:00 [idle_inject/0]
+root          14       2  0 14:30 ?        00:00:00 [cpuhp/0]
+root          15       2  0 14:30 ?        00:00:00 [cpuhp/1]
+root          16       2  0 14:30 ?        00:00:00 [idle_inject/1]
+root          17       2  0 14:30 ?        00:00:00 [migration/1]
+root          18       2  0 14:30 ?        00:00:00 [ksoftirqd/1]
+root          20       2  0 14:30 ?        00:00:00 [kworker/1:0H-kblockd]
+root          21       2  0 14:30 ?        00:00:00 [cpuhp/2]
+root          22       2  0 14:30 ?        00:00:00 [idle_inject/2]
+root          23       2  0 14:30 ?        00:00:00 [migration/2]
+root          24       2  0 14:30 ?        00:00:00 [ksoftirqd/2]
+root          26       2  0 14:30 ?        00:00:00 [kworker/2:0H-kblockd]
+root          27       2  0 14:30 ?        00:00:00 [cpuhp/3]
+root          28       2  0 14:30 ?        00:00:00 [idle_inject/3]
+root          29       2  0 14:30 ?        00:00:00 [migration/3]
+root          30       2  0 14:30 ?        00:00:00 [ksoftirqd/3]
+root          32       2  0 14:30 ?        00:00:00 [kworker/3:0H-kblockd]
+root          33       2  0 14:30 ?        00:00:00 [cpuhp/4]
+root          34       2  0 14:30 ?        00:00:00 [idle_inject/4]
+root          35       2  0 14:30 ?        00:00:00 [migration/4]
+root          36       2  0 14:30 ?        00:00:00 [ksoftirqd/4]
+root          38       2  0 14:30 ?        00:00:00 [kworker/4:0H-kblockd]
+root          39       2  0 14:30 ?        00:00:00 [cpuhp/5]
+root          40       2  0 14:30 ?        00:00:00 [idle_inject/5]
+root          41       2  0 14:30 ?        00:00:00 [migration/5]
+root          42       2  0 14:30 ?        00:00:00 [ksoftirqd/5]
+root          44       2  0 14:30 ?        00:00:00 [kworker/5:0H-kblockd]
+root          45       2  0 14:30 ?        00:00:00 [cpuhp/6]
+root          46       2  0 14:30 ?        00:00:00 [idle_inject/6]
+root          47       2  0 14:30 ?        00:00:00 [migration/6]
+root          48       2  0 14:30 ?        00:00:00 [ksoftirqd/6]
+root          50       2  0 14:30 ?        00:00:00 [kworker/6:0H-kblockd]
+root          51       2  0 14:30 ?        00:00:00 [cpuhp/7]
+root          52       2  0 14:30 ?        00:00:00 [idle_inject/7]
+root          53       2  0 14:30 ?        00:00:00 [migration/7]
+root          54       2  0 14:30 ?        00:00:00 [ksoftirqd/7]
+root          56       2  0 14:30 ?        00:00:00 [kworker/7:0H-kblockd]
+root          57       2  0 14:30 ?        00:00:00 [kdevtmpfs]
+root          58       2  0 14:30 ?        00:00:00 [netns]
+root          59       2  0 14:30 ?        00:00:00 [rcu_tasks_kthre]
+root          60       2  0 14:30 ?        00:00:00 [rcu_tasks_rude_]
+root          61       2  0 14:30 ?        00:00:00 [rcu_tasks_trace]
+root          62       2  0 14:30 ?        00:00:00 [kauditd]
+root          63       2  0 14:30 ?        00:00:00 [khungtaskd]
+root          64       2  0 14:30 ?        00:00:00 [oom_reaper]
+root          65       2  0 14:30 ?        00:00:00 [writeback]
+root          66       2  0 14:30 ?        00:00:00 [kcompactd0]
+root          67       2  0 14:30 ?        00:00:00 [ksmd]
+root          68       2  0 14:30 ?        00:00:00 [khugepaged]
+root         115       2  0 14:30 ?        00:00:00 [kintegrityd]
+root         116       2  0 14:30 ?        00:00:00 [kblockd]
+root         117       2  0 14:30 ?        00:00:00 [blkcg_punt_bio]
+root         118       2  0 14:30 ?        00:00:01 [kworker/u16:1-ext4-rsv-conversion]
+root         119       2  0 14:30 ?        00:00:00 [tpm_dev_wq]
+root         120       2  0 14:30 ?        00:00:00 [ata_sff]
+root         122       2  0 14:30 ?        00:00:00 [md]
+root         123       2  0 14:30 ?        00:00:00 [edac-poller]
+root         124       2  0 14:30 ?        00:00:00 [devfreq_wq]
+root         126       2  0 14:30 ?        00:00:00 [watchdogd]
+root         127       2  0 14:30 ?        00:00:00 [pm_wq]
+root         129       2  0 14:30 ?        00:00:00 [kswapd0]
+root         130       2  0 14:30 ?        00:00:00 [ecryptfs-kthrea]
+root         132       2  0 14:30 ?        00:00:00 [kthrotld]
+root         133       2  0 14:30 ?        00:00:00 [irq/122-aerdrv]
+root         134       2  0 14:30 ?        00:00:00 [irq/122-pcie-dp]
+root         135       2  0 14:30 ?        00:00:00 [irq/123-aerdrv]
+root         136       2  0 14:30 ?        00:00:00 [irq/123-pcie-dp]
+root         142       2  0 14:30 ?        00:00:00 [acpi_thermal_pm]
+root         144       2  0 14:30 ?        00:00:00 [vfio-irqfd-clea]
+root         147       2  0 14:30 ?        00:00:00 [ipv6_addrconf]
+root         156       2  0 14:30 ?        00:00:00 [kstrp]
+root         159       2  0 14:30 ?        00:00:00 [zswap-shrink]
+root         160       2  0 14:30 ?        00:00:05 [kworker/u17:0+i915_flip]
+root         167       2  0 14:30 ?        00:00:00 [charger_manager]
+root         214       2  0 14:30 ?        00:00:00 [nvme-wq]
+root         215       2  0 14:30 ?        00:00:00 [scsi_eh_0]
+root         216       2  0 14:30 ?        00:00:00 [scsi_tmf_0]
+root         217       2  0 14:30 ?        00:00:00 [nvme-reset-wq]
+root         218       2  0 14:30 ?        00:00:00 [nvme-delete-wq]
+root         232       2  0 14:30 ?        00:00:00 [irq/51-DELL0955]
+root         271       2  0 14:30 ?        00:00:00 [kworker/3:1H-kblockd]
+root         273       2  0 14:30 ?        00:00:00 [jbd2/nvme0n1p5-]
+root         274       2  0 14:30 ?        00:00:00 [ext4-rsv-conver]
+root         317       1  0 14:30 ?        00:00:00 /lib/systemd/systemd-journald
+root         336       2  0 14:30 ?        00:00:00 [kworker/0:1H-events_highpri]
+root         343       2  0 14:30 ?        00:00:00 [kworker/4:1H-kblockd]
+root         345       2  0 14:30 ?        00:00:00 [kworker/1:1H-kblockd]
+root         352       1  0 14:30 ?        00:00:00 /lib/systemd/systemd-udevd
+root         355       2  0 14:30 ?        00:00:00 [kworker/6:1H-events_highpri]
+root         359       2  0 14:30 ?        00:00:00 [loop0]
+root         370       2  0 14:30 ?        00:00:00 [kworker/5:1H-kblockd]
+root         373       2  0 14:30 ?        00:00:00 [kworker/2:1H-kblockd]
+root         403       2  0 14:30 ?        00:00:00 [loop1]
+root         421       2  0 14:30 ?        00:00:00 [loop2]
+root         422       2  0 14:30 ?        00:00:00 [loop3]
+root         423       2  0 14:30 ?        00:00:00 [loop4]
+root         429       2  0 14:30 ?        00:00:00 [cfg80211]
+root         431       2  0 14:30 ?        00:00:00 [irq/135-mei_me]
+root         434       2  0 14:30 ?        00:00:00 [loop5]
+root         437       2  0 14:30 ?        00:00:00 [loop6]
+root         438       2  0 14:30 ?        00:00:00 [irq/136-iwlwifi]
+root         439       2  0 14:30 ?        00:00:00 [irq/137-iwlwifi]
+root         440       2  0 14:30 ?        00:00:00 [irq/138-iwlwifi]
+root         442       2  0 14:30 ?        00:00:00 [irq/139-iwlwifi]
+root         443       2  0 14:30 ?        00:00:00 [irq/140-iwlwifi]
+root         444       2  0 14:30 ?        00:00:00 [irq/141-iwlwifi]
+root         445       2  0 14:30 ?        00:00:00 [irq/142-iwlwifi]
+root         446       2  0 14:30 ?        00:00:00 [irq/143-iwlwifi]
+root         447       2  0 14:30 ?        00:00:00 [irq/144-iwlwifi]
+root         448       2  0 14:30 ?        00:00:00 [irq/145-iwlwifi]
+root         450       2  0 14:30 ?        00:00:00 [kworker/7:1H-events_highpri]
+root         451       2  0 14:30 ?        00:00:00 [loop7]
+root         469       2  0 14:30 ?        00:00:00 [loop8]
+root         470       2  0 14:30 ?        00:00:00 [cryptd]
+root         495       2  0 14:30 ?        00:00:00 [loop9]
+root         497       2  0 14:30 ?        00:00:00 [loop10]
+root         519       2  0 14:30 ?        00:00:00 [loop11]
+root         525       2  0 14:30 ?        00:00:00 [loop12]
+root         533       2  0 14:30 ?        00:00:00 [loop13]
+root         534       2  0 14:30 ?        00:00:00 [loop14]
+root         535       2  0 14:30 ?        00:00:00 [irq/148-AudioDS]
+root         594       2  0 14:30 ?        00:00:00 [loop15]
+root         634       2  0 14:30 ?        00:00:00 [loop16]
+root         658       2  0 14:30 ?        00:00:00 [loop17]
+root         659       2  0 14:30 ?        00:00:00 [loop18]
+root         662       2  0 14:30 ?        00:00:00 [loop19]
+root         668       2  0 14:30 ?        00:00:00 [loop20]
+root         669       2  0 14:30 ?        00:00:00 [loop21]
+root         670       2  0 14:30 ?        00:00:00 [nvkm-disp]
+root         671       2  0 14:30 ?        00:00:00 [loop22]
+root         701       2  0 14:30 ?        00:00:00 [ttm_swap]
+root         716       2  0 14:30 ?        00:00:00 [loop23]
+root         720       2  0 14:30 ?        00:00:00 [loop24]
+systemd+     741       1  0 14:30 ?        00:00:02 /lib/systemd/systemd-resolved
+systemd+     747       1  0 14:30 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root         784       1  0 14:30 ?        00:00:00 /usr/sbin/acpid
+avahi        787       1  0 14:30 ?        00:00:00 avahi-daemon: running [Hime.local]
+root         788       1  0 14:30 ?        00:00:00 /usr/lib/bluetooth/bluetoothd
+message+     790       1  0 14:30 ?        00:00:02 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         791       1  0 14:30 ?        00:00:03 /usr/sbin/NetworkManager --no-daemon
+root         798       1  0 14:30 ?        00:00:00 /usr/sbin/irqbalance --foreground
+root         801       1  0 14:30 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         802       1  0 14:30 ?        00:00:01 /usr/libexec/polkitd --no-debug
+syslog       806       1  0 14:30 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         814       1  0 14:30 ?        00:00:02 /usr/lib/snapd/snapd
+root         820       1  0 14:30 ?        00:00:00 /usr/libexec/switcheroo-control
+root         821       1  0 14:30 ?        00:00:40 /usr/sbin/thermald --systemd --dbus-enable --adaptive
+root         822       1  0 14:30 ?        00:00:00 /usr/libexec/udisks2/udisksd
+root         824       1  0 14:30 ?        00:00:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+avahi        827     787  0 14:30 ?        00:00:00 avahi-daemon: chroot helper
+kernoops     867       1  0 14:30 ?        00:00:00 /usr/sbin/kerneloops --test
+root         878       1  0 14:30 ?        00:00:00 /usr/sbin/ModemManager
+kernoops     879       1  0 14:30 ?        00:00:00 /usr/sbin/kerneloops
+root         958       1  0 14:30 ?        00:00:00 /usr/libexec/upowerd
+root         996       1  0 14:30 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root         997       1  0 14:30 ?        00:00:00 /usr/sbin/cron -f
+root         998       1  0 14:30 ?        00:00:00 /usr/sbin/cupsd -l
+root         999       1  0 14:30 ?        00:00:00 /usr/sbin/cups-browsed
+root        1002       1  0 14:30 ?        00:00:02 /lib/systemd/systemd-logind
+root        1015       1  0 14:30 ?        00:00:00 /usr/sbin/gdm3
+root        1022       1  0 14:30 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+rtkit       1079       1  0 14:30 ?        00:00:00 /usr/libexec/rtkit-daemon
+colord      1384       1  0 14:30 ?        00:00:00 /usr/libexec/colord
+root        1445    1015  0 14:30 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+hime_ch+    1487       1  0 14:31 ?        00:00:00 /lib/systemd/systemd --user
+hime_ch+    1488    1487  0 14:31 ?        00:00:00 (sd-pam)
+hime_ch+    1494    1487  0 14:31 ?        00:00:01 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+hime_ch+    1496    1487  0 14:31 ?        00:00:01 /usr/libexec/tracker-miner-fs
+hime_ch+    1500    1487  0 14:31 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+hime_ch+    1502       1  0 14:31 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+hime_ch+    1519    1487  0 14:31 ?        00:00:00 /usr/libexec/gvfsd
+hime_ch+    1524    1487  0 14:31 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+hime_ch+    1527    1487  0 14:31 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+hime_ch+    1538    1487  0 14:31 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+hime_ch+    1543    1487  0 14:31 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+hime_ch+    1547    1487  0 14:31 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+hime_ch+    1552    1487  0 14:31 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+hime_ch+    1557    1487  0 14:31 ?        00:00:00 /usr/libexec/goa-daemon
+root        1560       2  0 14:31 ?        00:00:00 [krfcommd]
+hime_ch+    1567    1487  0 14:31 ?        00:00:00 /usr/libexec/goa-identity-service
+hime_ch+    1586    1445  0 14:31 tty2     00:00:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+hime_ch+    1588    1586  3 14:31 tty2     00:02:21 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+hime_ch+    1614    1586  0 14:31 tty2     00:00:00 /usr/libexec/gnome-session-binary --systemd --session=ubuntu
+hime_ch+    1680    1614  0 14:31 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+hime_ch+    1702    1487  0 14:31 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
+hime_ch+    1707    1702  0 14:31 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+hime_ch+    1717    1487  0 14:31 ?        00:00:00 /usr/libexec/gnome-session-ctl --monitor
+hime_ch+    1724    1487  0 14:31 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+hime_ch+    1743    1487  3 14:31 ?        00:02:13 /usr/bin/gnome-shell
+hime_ch+    1768    1743  0 14:31 ?        00:00:00 ibus-daemon --panel disable --xim
+hime_ch+    1772    1768  0 14:31 ?        00:00:00 /usr/libexec/ibus-memconf
+hime_ch+    1773    1768  0 14:31 ?        00:00:01 /usr/libexec/ibus-extension-gtk3
+hime_ch+    1775    1487  0 14:31 ?        00:00:00 /usr/libexec/ibus-x11 --kill-daemon
+hime_ch+    1777    1487  0 14:31 ?        00:00:00 /usr/libexec/ibus-portal
+hime_ch+    1787    1487  0 14:31 ?        00:00:01 /usr/libexec/at-spi2-registryd --use-gnome-session
+hime_ch+    1793    1487  0 14:31 ?        00:00:00 /usr/libexec/xdg-permission-store
+hime_ch+    1797    1487  0 14:31 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+hime_ch+    1804    1487  0 14:31 ?        00:00:00 /usr/libexec/evolution-source-registry
+hime_ch+    1813    1487  0 14:31 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+hime_ch+    1824    1487  0 14:31 ?        00:00:00 /usr/libexec/dconf-service
+hime_ch+    1830    1487  0 14:31 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+hime_ch+    1847    1487  0 14:31 ?        00:00:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+hime_ch+    1859    1519  0 14:31 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.3 /org/gtk/gvfs/exec_spaw/0
+hime_ch+    1867    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+hime_ch+    1868    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-color
+hime_ch+    1869    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-datetime
+hime_ch+    1872    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-housekeeping
+hime_ch+    1873    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-keyboard
+hime_ch+    1874    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-media-keys
+hime_ch+    1876    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-power
+hime_ch+    1880    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-print-notifications
+hime_ch+    1881    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-rfkill
+hime_ch+    1882    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+hime_ch+    1883    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-sharing
+hime_ch+    1884    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-smartcard
+hime_ch+    1886    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-sound
+hime_ch+    1887    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-wacom
+hime_ch+    1895    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-xsettings
+hime_ch+    1916    1724  0 14:31 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+hime_ch+    1925    1724  0 14:31 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+hime_ch+    1988    1487  0 14:31 ?        00:00:00 /usr/libexec/gsd-printer
+hime_ch+    1989    1487  0 14:31 ?        00:00:03 /snap/snap-store/547/usr/bin/snap-store --gapplication-service
+hime_ch+    2007    1768  0 14:31 ?        00:00:00 /usr/libexec/ibus-engine-simple
+hime_ch+    2024    1487  0 14:31 ?        00:00:00 /usr/libexec/xdg-document-portal
+root        2028    2024  0 14:31 ?        00:00:00 fusermount -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+hime_ch+    2130    1487  0 14:31 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+hime_ch+    2134    1487  0 14:31 ?        00:00:00 /usr/libexec/xdg-desktop-portal-gtk
+root        2145       1  0 14:31 ?        00:00:00 /usr/libexec/fwupd/fwupd
+hime_ch+    2854    1487  0 14:32 ?        00:00:00 /usr/libexec/gvfsd-metadata
+hime_ch+    2857    1724  0 14:32 ?        00:00:00 update-notifier
+hime_ch+    3083    1487  3 14:33 ?        00:02:35 /opt/google/chrome/chrome
+hime_ch+    3090    3083  0 14:33 ?        00:00:00 cat
+hime_ch+    3091    3083  0 14:33 ?        00:00:00 cat
+hime_ch+    3094    3083  0 14:33 ?        00:00:00 /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25,
+hime_ch+    3095    3083  0 14:33 ?        00:00:00 /opt/google/chrome/chrome --type=zygote --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25,
+hime_ch+    3096    3095  0 14:33 ?        00:00:00 /opt/google/chrome/nacl_helper
+hime_ch+    3099    3095  0 14:33 ?        00:00:00 /opt/google/chrome/chrome --type=zygote --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25,
+hime_ch+    3119    3094  2 14:33 ?        00:01:34 /opt/google/chrome/chrome --type=gpu-process --field-trial-handle=6335544785058820267,4932640776762712567,131072 --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --gpu-preferences=OAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAABgAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA== --shared-files
+hime_ch+    3123    3083  0 14:33 ?        00:00:29 /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --service-sandbox-type=network --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --shared-files=v8_context_snapshot_data:100
+hime_ch+    3142    3099  0 14:33 ?        00:00:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --service-sandbox-type=utility --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --shared-files=v8_context_snapshot_data:100
+hime_ch+    3165    3099  0 14:33 ?        00:00:02 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=12 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3229    3099  0 14:33 ?        00:00:01 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3252    3099  0 14:33 ?        00:00:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3271    3099  0 14:33 ?        00:00:22 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=7 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3284    3099  0 14:33 ?        00:00:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=8 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3297    3099  0 14:33 ?        00:00:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=9 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3310    3099  0 14:33 ?        00:00:16 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=10 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3323    3099  0 14:33 ?        00:00:02 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=11 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3336    3099  0 14:33 ?        00:00:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3348    3099  0 14:33 ?        00:00:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=15 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3434    3099  1 14:33 ?        00:00:49 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=20 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3486    3083  0 14:33 ?        00:00:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=audio.mojom.AudioService --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --service-sandbox-type=none --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --shared-files=v8_context_snapshot_data:100
+hime_ch+    3584    3099  5 14:33 ?        00:03:39 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=27 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3743    3099  0 14:34 ?        00:00:08 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=36 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    3795    3099  0 14:35 ?        00:00:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=39 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root        4308       2  0 14:46 ?        00:00:00 [kworker/4:3-events]
+hime_ch+    4322    1487  0 14:47 ?        00:00:11 /usr/bin/nautilus --gapplication-service
+hime_ch+    4341    1487  0 14:48 ?        00:00:15 evince /home/hime_chan/Downloads/lpi102prepv3.pdf
+hime_ch+    4347    1487  0 14:48 ?        00:00:00 /usr/libexec/evinced
+root        4477       2  0 14:53 ?        00:00:00 [kworker/3:1-events]
+hime_ch+    4573    1487  0 14:55 ?        00:00:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+hime_ch+    4576    4573  0 14:55 ?        00:00:00 /usr/bin/gnome-terminal.real --wait
+hime_ch+    4579    1487  0 14:55 ?        00:00:08 /usr/libexec/gnome-terminal-server
+hime_ch+    4587    4579  0 14:55 pts/0    00:00:00 bash
+hime_ch+    4690    3099  1 14:57 ?        00:00:42 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=61 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root        4864       2  0 14:59 ?        00:00:01 [kworker/6:1-events]
+root        5073       2  0 15:05 ?        00:00:00 [kworker/u16:2-events_unbound]
+root        5128       2  0 15:07 ?        00:00:04 [kworker/6:0-events]
+hime_ch+    5415    3099  0 15:14 ?        00:00:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=84 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+hime_ch+    5478    3099  0 15:15 ?        00:00:02 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --extension-process --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=86 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root        5493       2  0 15:15 ?        00:00:00 [kworker/u16:0-events_unbound]
+root        5494       2  0 15:15 ?        00:00:00 [kworker/2:2-events]
+hime_ch+    5499    1743  0 15:15 ?        00:00:07 gnome-control-center wifi
+root        5615       2  0 15:16 ?        00:00:00 [uas]
+root        5648       2  0 15:16 ?        00:00:00 [kworker/7:0-events]
+root        5902       2  0 15:20 ?        00:00:00 [kworker/u17:2-rb_allocator]
+root        5915       2  0 15:20 ?        00:00:00 [kworker/3:2-events]
+hime_ch+    5920    3099  0 15:21 ?        00:00:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=6335544785058820267,4932640776762712567,131072 --lang=en-US --enable-crash-reporter=3af2a853-b5c8-415d-95dc-ee07f1651f25, --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=92 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root        5987       2  0 15:21 ?        00:00:00 [kworker/0:0-events_freezable]
+root        6026       2  0 15:21 ?        00:00:00 [kworker/5:0-events]
+root        6104       2  0 15:22 ?        00:00:00 [kworker/1:2-events]
+root        6254       2  0 15:22 ?        00:00:00 [kworker/2:3-events]
+root        6317       2  0 15:22 ?        00:00:00 [scsi_eh_1]
+root        6318       2  0 15:22 ?        00:00:00 [scsi_tmf_1]
+root        6319       2  0 15:22 ?        00:00:00 [usb-storage]
+root        6606       2  0 15:27 ?        00:00:00 [kworker/5:1-events]
+root        6745       2  0 15:32 ?        00:00:00 [kworker/0:1-events]
+root        6846       2  0 15:34 ?        00:00:00 [kworker/1:1-events]
+root        6854       2  0 15:34 ?        00:00:00 [kworker/7:1-events]
+root        6856       2  0 15:34 ?        00:00:00 [kworker/4:1-events]
+hime_ch+    6905    1487  2 15:34 ?        00:00:06 /usr/bin/gedit --gapplication-service
+root        6971       2  0 15:35 ?        00:00:00 [kworker/5:2-events]
+root        6982       2  0 15:36 ?        00:00:00 [kworker/2:0-events]
+root        7126       2  0 15:37 ?        00:00:00 [kworker/6:2-events]
+hime_ch+    7172    1487  0 15:39 ?        00:00:00 /usr/libexec/tracker-store
+root        7265       2  0 15:39 ?        00:00:00 [kworker/7:2]
+root        7266       2  0 15:39 ?        00:00:00 [kworker/1:0-mm_percpu_wq]
+root        7268       2  0 15:39 ?        00:00:00 [kworker/4:0]
+hime_ch+    7275    4587  0 15:40 pts/0    00:00:00 ps -ef
+hime_ch+    7276    4587  0 15:40 pts/0    00:00:00 more

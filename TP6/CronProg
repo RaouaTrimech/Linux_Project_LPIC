@@ -1,0 +1,52 @@
+echo "En combien de minute voulez-vous compiler le programme ? " ;
+read min ;
+ echo "En combien d'heure voulez-vous compiler le programme ? " ;
+read heu ;
+echo "En combien de jour voulez-vous compiler le programme ? " ;
+read dayM ;
+echo "En combien de mois voulez-vous compiler le programme ?" ; 
+echo "sachant que les mois sont numérotés de 1 jusqu'à 12 " ;
+read month ;
+echo "En combien de jour de semaine voulez-vous compiler le programme ? ";
+echo "sachant que les jours sont numérotés de 0 jusqu'à 7 avec 0 représentant dimanche : " ;
+read dayW ;
+echo "Saisir le chemin du script à exécuter : " ;
+read script ; 
+
+echo $min $heu $dayM $dayW $script ;
+touch /tmp/fcron ;
+
+if [ $min -eq 1 ] ; 
+	then 
+	printf "%s\t" "*" >>  /tmp/fcron ; 
+	else  
+	printf "%s\t" "$min" >>  /tmp/fcron ; 
+	fi ; 
+if [ $heu -eq 1 ] ; 
+	then 
+	printf "%s\t" "*" >>  /tmp/fcron ; 
+	else  
+	printf "%s\t" "$heu" >>  /tmp/fcron ; 
+	fi ; 
+if [ $dayM -eq 1 ] ; 
+	then 
+	printf "%s\t" "*" >>  /tmp/fcron ; 
+	else  
+	printf "%s\t" "$dayM" >>  /tmp/fcron ; 
+	fi ; 
+if [ $month -eq 1 ] ; 
+	then 
+	printf "%s\t" "*" >>  /tmp/fcron ; 
+	else  
+	printf "%s\t" "$month" >>  /tmp/fcron ; 
+	fi ; 
+if [ $dayW -eq 1 ] ; 
+	then 
+	printf "%s\t" "*" >>  /tmp/fcron ; 
+	else  
+	printf "%s\t" "$dayW" >>  /tmp/fcron ; 
+	fi ; 
+printf "%s >> %s \n" "${script}" "/tmp/Output" >>  /tmp/fcron ;
+
+echo ;
+crontab < /tmp/fcron ;

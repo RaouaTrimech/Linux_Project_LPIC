@@ -1,0 +1,43 @@
+while echo "Choisir une des commandes suivantes :" ;echo " 0. exit" ;echo " 1. Lister les modules du kernel"; echo " 2. Afficher les informations du système";
+read choix ; 
+[ $choix -ne 0 ] ; 
+do 
+if [ $choix -eq 1 ] ;
+then 
+	lsmod | nl 
+	while echo "choisir une des commandes suivantes :" ; echo " 0. exit" ; echo " 1. Ajouter un module"; echo " 2. Supprimer un module";
+	read choixModif ;
+	[ $choixModif -ne 0 ] ;
+	do 
+		if [ $choixModif -eq  2 ] ;
+		then
+			echo "entrer le numéro du module à supprimer :";
+			read numS ; 
+			ligne=$(lsmod | head -$numS | tail -1 | cut -d" " -f1 ) ;
+			rmmod $ligne;
+			printf "%d %s\n" $numS $ligne >> SuppHis;	
+		elif [ $choixModif -eq 1 ]
+		then 
+			cat SuppHis ;
+			echo "entrer le numéro du module à ajouter :" ;
+			read numAj ;
+			# ligneA=$(cat SuppHis | grep $numAj | cut -f2 ) 
+			while read num nom 
+			do 
+			echo $num $nom ;
+			if [ $num -eq $numAj ] ;
+			then 
+				modprobe -v $nom ;
+				sed -i '/'$numAj'/d' SuppHis ;
+			fi ;
+			done < SuppHis 
+
+		else echo "Ce choix n'est pas listé ici `choixModif` ";		
+ 	fi ;
+	done ;
+elif [ $choix -eq 2 ] ;
+then uname 
+else echo "Ce choix n'est pas listé" 
+fi ; 
+done
+

@@ -1,0 +1,99 @@
+while echo "Choisir une des commandes suivantes : " ; echo " 0. Exit " ; echo " 1. Lister la liste des utilisateurs " ; echo " 2. Modifier la liste des utilisateurs " ;
+read choix ; 
+[ $choix -ne 0 ] ;
+do 
+if [ $choix -eq 1 ] ;
+then 	
+	cat /etc/passwd | awk -F: '{printf("%s\t%d\n",$1,$3);}' | column -t ;
+elif [ $choix -eq 2 ] ;
+then 
+	cat /etc/passwd | awk -F: '{printf("%s\t%d\n",$1,$3);}' | column -t  ;
+	while echo " 0. Exit " ; echo " 1. Ajouter un utilisateur " ; echo " 2. Supprimer un utilisateur " ; echo " 3. Modifier un utilisateur ";
+	read choix2 ;
+	[ $choix2 -ne 0 ] ;
+	do 
+	if [ $choix2 -eq 1 ] ;
+	then 
+		echo "Veuillez saisir le nom de l utilisateur à ajouter : " ;
+		read NomUtilA ;
+		sudo useradd -m $NomUtilA ;
+		echo " L'utilisateur $NomUtilA a été ajouté avec succès" ; 
+	elif [ $choix2 -eq 2 ] ;
+	then
+		cat /etc/passwd | cut -d':' -f1 ;
+		echo "Veuillez saisir le nom de l utilisateur à supprimer : " ;
+		read NomUtilS ;
+		sudo userdel -r $NomUtilS ;
+		echo " L'utilisateur $NomUtilS a été supprimé avec succès" ; 
+	elif [ $choix2 -eq 3 ] ;
+	then 
+		echo "Veuillez saisir le nom de l utilisateur à modifier : " ;
+		read NomUtilM ;
+		while echo " 0. Retour" ; echo " 1. Changer le nom " ; echo " 2. Changer l accès avec le password " ; echo " 3. Gérer la liste des groupes " ; echo " 4. Modifier les informations de l utilisateur";
+		read choix3 ;
+		[ $choix3 -ne 0 ] ;
+		do 	
+		case $choix3 in 
+		1)
+			echo "Veuillez saisir le nouveau nom :" ; 
+			read NomNou ;
+			sudo usermod -l $NomNou $NomUtilM ;
+			echo " Le nom de l'utilisateur $NomUtilM a passé de $NomUtilM à $NomNou avec succès" ; 
+			NomUtilM=$NomNou ;
+			;;
+		2)
+			sudo passwd $NomUtilM ;
+			;;
+		3)
+			groups $NomUtilM ;
+			while echo " 0. Retour" ; echo " 1. Ajouter un groupe " ; echo " 2. Supprimer un groupe " ; echo " 3. Changer le groupe primaire " ; 
+			read choixG ;
+			[ $choixG -ne 0 ] ;
+			do 	
+			case $choixG in 
+			1)
+				cat /etc/group | cut -d':' -f1 ;
+				echo "Veuillez saisir le nom du groupe à ajouter : " ;
+				read GroupA ;
+				sudo usermod -aG $GroupA $NomUtilM ;
+				echo " Le groupe $GroupA a été ajouté avec succès" ; 
+				;;
+			2)
+				groups $NomUtilM ;
+				echo "Veuillez saisir le nom du groupe à supprimer : " ;
+				read GroupS ;
+				sudo gpasswd -d $NomUtilM $GroupS ;
+				echo " Le groupe $GroupS a été supprimé avec succès" ; 
+				;;
+			3)
+				cat /etc/group | cut -d':' -f1 ;
+				echo "Veuillez saisir le nom du groupe primaire : " ;
+				read GroupP ;
+				sudo usermod -g $GroupP $NomUtilM ;
+				echo " Le groupe primaire $GroupP a été modifié avec succès" ;
+				;;
+			*)
+				echo "Ce choix n est pas listé" ;
+     				;;
+			esac
+			done ;
+			;;
+		4)
+			getent passwd $NomUtilM | cut -d':' -f5 ;
+			echo "Veuillez saisir les nouvelles informations : " ;
+			read Com ;
+			sudo usermod -c "$Com" $NomUtilM ;
+			echo " Les infromations de l'utilisateur $NomUtilM ont été modifié avec succès" ;
+			;;
+		*)
+			echo "Ce choix n est pas listé" ;
+     			;;
+		esac
+		done ;
+		
+	else echo "Ce choix n est pas listé" ;
+	fi ;
+	done ;		
+else echo "Ce choix n est pas listé" 
+fi ; 
+done

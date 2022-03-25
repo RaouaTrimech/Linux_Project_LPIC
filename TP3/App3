@@ -1,0 +1,84 @@
+while echo "Choisir une des commandes suivantes :" ;echo " 0. exit" ;echo " 1. Afficher le runlevel"; echo " 2. Afficher les processus lancés au démarrage"; echo " 3. Afficher les applications exécutées selon le runlevel "; echo " 4. Afficher les messages de démarrage"; echo " 5. Arreter la machine";
+read choix ; 
+[ $choix -ne 0 ] ; 
+do 
+if [ $choix -eq 1 ] ;
+then 
+	who -r ;
+elif [ $choix -eq 2 ] ;
+then 
+	while read uid pid ppid c stime tty time cmd
+	do 
+	if [ $ppid == '1' ]
+	then
+		echo $cmd ;
+	fi ;
+	done < ListPro
+elif [ $choix -eq 3 ] ;
+then 
+	while 
+	echo ;
+	echo "Runlevel 0 : Arrêt de la machine" ;
+	echo "Runlevel 1 : Mode maintenance (mono-utilisateur en ligne de commande)" ;
+	echo "Runlevel 2 à 5 : Mode multi-utilisateur complet avec serveur graphique si installé" ;
+	echo "Runlevel 6 : Redémarrage de la machine" ; echo ;
+	echo "Veillez saisir le runlevel ou tapez r pour retourner au menu principale :" ;
+	read runlev ;
+	[ $runlev != 'r' ] ; 
+	do
+	case $runlev in
+	0 | 1 | 2 | 3 | 4 | 5 | 6 | S ) 
+     	ls /etc/rc$runlev.d ;
+     	#Activation/Desactivation des servives de chaque runlevel :
+     	
+     	echo "choisir le service a activer/desactiver";
+     	read service ;
+     	echo "le status du service que vous avez choisi est :";
+     	status=$(systemctl status $service.service | head -3 | tail -1 );
+     	echo $status ;
+     	if echo "$status" | grep 'Active: active' ;
+     	then 
+		echo "Voulez-vous arreter ce service ? : 1.Oui 2.Non";
+		read rep ;
+		case $rep in 
+		1)
+		sudo systemctl stop $service.service ;
+		;;
+		2)
+		;;
+		*)
+		echo "Ce choix n'est pas correcte";
+		;;
+		esac ;
+	else
+		echo "Voulez-vous activer ce service ? : 1.Oui 2.Non";
+		read rep ;
+		case $rep in 
+		1)
+		sudo systemctl start $service.service ;
+		;;
+		2)
+		;;
+		*)
+		echo "Ce choix n'est pas correcte";
+		;;
+		esac ;
+	fi ;
+	
+     	;;
+     	* )
+     	echo "Ce runlevel n'existe pas dans la liste " ;
+     	;;
+     	esac ;
+     	done ;
+elif [ $choix -eq 4 ] ;
+then
+	sudo dmesg ;
+elif [ $choix -eq 5 ] ;
+then
+	# sudo halt ;
+	sudo init 0 ;
+else echo "Ce choix n'est pas listé" ;
+fi ; 
+done
+

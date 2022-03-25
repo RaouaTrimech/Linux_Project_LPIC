@@ -1,0 +1,212 @@
+while echo "----------------------------------------------------------------------------" ; 
+echo "     Sauvegarde & Restauration" ;
+echo " 1. Sauvegrader"; 
+echo " 2. Restaurer"; 
+echo " 3. Quitter "; 
+echo "----------------------------------------------------------------------------" ; 
+read choix ; 
+[ $choix -ne 3 ] ; 
+do 
+
+
+if [ $choix -eq 1 ] ;
+then 
+	while 
+	echo ;
+	echo "--------------------- Sauvegarde ... ------------------------------" ; 
+	echo " 11. tar"; 
+	echo " 12. cpio"; 
+	echo " 13. dd "; 
+	echo " 14. dump "; 
+	echo " 99. revenir au menu précédent ";
+	echo " 3. Quitter ";  
+echo "----------------------------------------------------------------------------" ; 
+	read choix1 ;
+	
+	[ $choix1 -ne 99 ] ; 
+	do 
+		case $choix1 in 
+		11)
+		echo ; 
+		echo "Saisir le fichier à sauvegarder :" ;
+		read fichier ;
+		echo "Saisir l'emplacement:" ;
+		read emp ;
+		tar -cvf $emp $fichier ;
+		echo " le fichier $fichier est sauvegardé dans $emp avec tar" ;
+		;;
+		
+		# fichier 
+		12)
+		echo ; 
+		echo "Saisir le fichier à sauvegarder :" ;
+		read fichier ;
+		echo "Saisir le nom de l'archive (absolue) :" ;
+		read emp ;
+		find $fichier -depth | cpio -ov > $emp ;
+		echo " le fichier $fichier est sauvegardé dans $emp avec cpio" ;
+		;;
+		
+		# fichier 
+		13)
+		echo ; 
+		echo "Saisir le fichier à sauvegarder :" ;
+		read fichier ;
+		echo "Saisir l'emplacement:" ;
+		read emp ;
+		dd  if=$fichier of=$emp  ;
+		echo " le fichier $fichier est sauvegardé dans $emp avec dd" ;
+		;;
+	
+		# système de fichier : the levels (1,2..) work only on os with ext3
+		# which is not the case for ubuntu !! 
+		14)
+		echo ; 
+		echo "Saisir le système de fichier à sauvegarder :" ;
+		read fichier ;
+		echo "Saisir l'emplacement:" ;
+		read emp ;
+		# echo "Saisir le level :" ;
+		# read lev ;
+		sudo dump -f $emp $fichier  ;
+		echo " le système de fichier $fichier est sauvegardé dans $emp avec dump" ;
+		;;
+		
+		3)
+		exit ;
+		;;	
+		
+		*)
+		echo "Ce choix n'est pas correcte";
+		;;
+		esac ;
+	done ;
+
+elif [ $choix -eq 2 ] ;
+then 
+	while 
+	echo ;
+	echo "--------------------- Restaure ... ------------------------------" ; 
+	echo " 21. tar"; 
+	echo " 22. cpio"; 
+	echo " 23. dd "; 
+	echo " 24. dump "; 
+	echo " 99. revenir au menu précédent ";
+	echo " 3. Quitter ";  
+	
+echo "----------------------------------------------------------------------------" ; 
+read choix2 ;
+	
+	[ $choix2 -ne 99 ] ; 
+	do 
+		case $choix2 in 
+		# Case 21 : 
+		21)
+		echo ; 
+		echo "Saisir l'archive à restaurer :" ;
+		read Arch ;
+		tar -tvf $Arch ;  
+		echo "Saisir le(s) fichier(s) à extraire :" ;
+		read fichiers ;
+		echo "Saisir l'emplacement:" ;
+		read emp ; 
+		if [ -z $emp ] ;
+		then
+		tar -xvf $Arch $fichiers ;
+		else
+		tar -xvf $Arch $fichiers -C $emp  ;
+		fi ;
+		echo " Le(s) fichier(s) de l'archive tar $Arch est (sont) restauré(s) dans $emp " ;
+		;;
+		
+		# Case 22 : fichier 
+		22)
+		echo ; 
+		echo "Saisir l'archive :" ;
+		read Arch ; 
+		cpio -tv < $Arch ; # Afficher le contenu de l'archive
+		
+		echo "Saisir le(s) fichier(s) à restaurer (saisir r pour effectuer la restauration):" ;
+		touch tmp ;
+		while read fichier ;
+			[ $fichier != 'r' ] ; 
+			do 
+			echo $fichier >> tmp ;
+			done ;
+		if [ -s tmp ]
+		then
+			sudo cpio -idvE tmp < $Arch  ;
+			#sudo cpio -iuE tmp -F $Arch -D $dir ;
+		else
+			sudo cpio -iudv  < $Arch ;
+			#sudo cpio -iuv < $Arch ;
+		fi ;
+		 rm -f tmp ;
+		;;
+		
+		# Case 23 : fichier 
+		23)
+		echo ; 
+		echo "Saisir l'archive à resaurer :" ;
+		read Arch ;
+		echo "Saisir l'emplacement:" ;
+		read emp ;
+		dd  if=$emp of=$Arch  ;
+		echo " Les fichiers de l'archive dd $Arch sont restaurés dans $emp " ;
+		;;
+	
+		# Case 24 : système de fichier 
+		24)
+		echo ; 
+		echo "Saisir l'archive à restaurer :" ;
+		read Arch ;
+		while 
+			echo  ;
+			echo "----------------------------------------------------------------------------" ; 
+			echo "241. Comparer le contenu de l'archive avec l'original" ;
+			echo "242. Entrer en mode interactive" ;
+			echo " 99. revenir au menu précédent ";
+			echo " 3. Quitter ";  
+			echo "----------------------------------------------------------------------------" ; 
+			read choix24 ;	
+			[ $choix24 -ne 99 ] ; 
+			do
+				case $choix24 in 
+				241)
+				sudo restore -C -f $Arch ;
+				;;
+				242)
+				sudo restore -i -f $Arch ;
+				;;
+				3)
+				exit ;
+				;;
+				*)
+				echo "Ce choix n'est pas correcte";
+				;;
+			esac ;
+		done ;
+		;;
+		
+		# Case 3 : 
+		3)
+		exit ;
+		;;	
+		
+		*)
+		echo "Ce choix n'est pas correcte";
+		;;
+		esac ;
+	done ;
+
+else echo "Ce choix n'est pas listé" ;
+fi ; 
+done ;
+
+
+
+
+
+
+
+

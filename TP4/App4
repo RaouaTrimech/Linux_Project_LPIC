@@ -1,0 +1,81 @@
+while echo "----------------------------------------------------------------------------" ; 
+echo "Choisir une des commandes suivantes :" ;echo " 1. Afficher tous les process"; echo " 2. Tuer un process"; echo " 3. Stopper un process "; echo " 4. Continuer un process"; echo " 5. Afficher les parents d'un process"; echo " 6. Afficher le propriétaire d'un process"; echo " 7. Afficher les fils d'un process"; echo " 8. Quitter"; 
+echo "----------------------------------------------------------------------------" ; 
+read choix ; 
+[ $choix -ne 8 ] ; 
+do 
+if [ $choix -eq 1 ] ;
+then 
+	echo ;
+	echo "--------------------- La Liste des Process ------------------------------" ; 
+	sudo ps -ef ;
+elif [ $choix -eq 2 ] ;
+then 
+	while 
+	echo "Veillez saisir le numéro du process à tuer ou tapez r pour retourner au menu principale :" ;
+	read pidt ;
+	[ $pidt != 'r' ] ; 
+	do 
+		sudo kill -9 $pidt ;
+		echo "Le process $pidt a été tué" ; 
+	done ;
+	
+elif [ $choix -eq 3 ] ;
+then 
+	while 
+	echo "Veillez saisir le numéro du process à stopper ou tapez r pour retourner au menu principale :" ;
+	read pids ;
+	[ $pids != 'r' ] ; 
+	do 
+		sudo kill -19 $pids ;
+		echo "Le process $pids a été stoppé" ;  
+	done ;
+	
+elif [ $choix -eq 4 ] ;
+then
+	while 
+	echo "Veillez saisir le numéro du process à continuer ou tapez r pour retourner au menu principale :" ;
+	read pidc ;
+	[ $pidc != 'r' ] ; 
+	do 
+		sudo kill -18 $pidc ;
+		echo "Le process $pidc est continué" ;  
+	done ;
+	
+elif [ $choix -eq 5 ] ;
+then
+	while 
+	echo "Veillez saisir le PID du process pour afficher ses parents ou tapez r pour retourner au menu principale :" ;
+	read pidf ;
+	[ $pidf != 'r' ] ; 
+	do 
+		echo "Les parents du fils dont le pid est :" ;
+		sudo ps -ef | awk '{printf("%d\t%d\t%s\n",$2,$3,$8)}'| grep "^$pidf" | more ;
+	done ;
+
+elif [ $choix -eq 6 ] ;
+then
+	while 
+	echo "Veillez saisir le PID du process pour afficher le propriétaire ou tapez r pour retourner au menu principale :" ;
+	read pidp ;
+	[ $pidp != 'r' ] ; 
+	do 
+		echo "Le propriétaire du process dont le pid est :" ;
+		sudo ps -ef | awk '{printf("%d\t%s\n",$2,$1)}'| grep "^$pidp" | more ;
+	done ;
+
+elif [ $choix -eq 7 ] ;
+then
+	while 
+	echo "Veillez saisir le PID du process pour afficher ses fils ou tapez r pour retourner au menu principale :" ;
+	read pidp ;
+	[ $pidp != 'r' ] ; 
+	do 
+		echo "Les fils du parent dont le pid est :" ; 
+		sudo ps -ef | awk '{printf("%d\t%d\t%s\n",$3,$2,$8)}'| grep "^$pidp" | more ;
+
+	done ;
+else echo "Ce choix n'est pas listé" ;
+fi ; 
+done
+
